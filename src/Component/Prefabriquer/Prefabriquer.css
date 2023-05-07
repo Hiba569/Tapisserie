@@ -1,0 +1,39 @@
+.bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/bg3.png") center center fixed no-repeat;
+  height: 750px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+}
+
+.bg .bg-desc {
+  font-size: 100px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  margin-top: 280px;
+  text-align: center;
+  align-items: center;
+}
+
+.ligne {
+    width: 25%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border: 5px solid rgb(255, 0, 0);
+}
+.card{
+  position:absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.btn{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+}
