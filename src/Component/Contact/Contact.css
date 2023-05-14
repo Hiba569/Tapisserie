@@ -1,48 +1,89 @@
-.container form{ 
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;   
-    width: 100%;
-    height: 500px;
-     
+.ng {
+  background: linear-gradient(rgba(0, 0, 0, 0.628), rgba(0, 0, 0, 0.686)),
+    url("./../../assets/tt.jpg") center center fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    font-size: 30px;
+.formulaire {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  height: auto;
+  padding: 40px;
+  margin-top: 100px;
+  background-color: rgba(219, 230, 239, 0.516);
 }
 
-input{
+.formulaire h2 {
+  font-family: merriweather;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
-    width: 100%;
-    height: 50px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(26, 31, 75);
-   
+.formulaire label {
+  font-size: 25px;
+  font-family: redressed;
 }
-label{
-    margin-top: 1rem;
+
+.formulaire input,
+.formulaire textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 7px;
+  outline: none;
 }
-textarea{
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-    max-height: 100px;
-    min-height: 100px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(26, 31, 75);
+
+.formulaire textarea {
+  height: 70px;
 }
-.button{
-    margin-top: 30px;
-    background-color: rgb(181, 181, 230);
+
+.la {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  height: auto;
 }
-.button:hover{
-  background-color: rgb(255, 255, 255);
-  border: 2px solid blue;
+
+.info {
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.info h3 {
+  color: rgb(232, 169, 169);
+  text-transform: uppercase;
+  font-family: redressed;
+  font-size: 60px;
+}
+
+.info p {
+  font-size: 30px;
+}
+
+.adresse h3 {
+  margin-top: 200px; /* Adjust the margin as needed */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .ng {
+    height: auto;
+  }
+
+  .formulaire {
+    margin-top: 40px;
+  }
+
+  .la {
+    max-width: 200px;
+  }
 }

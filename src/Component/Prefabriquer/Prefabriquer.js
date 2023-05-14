@@ -1,11 +1,25 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Navs from "../Navs/Navs";
 import "./Prefabriquer.css";
 import { Card, Button } from "react-bootstrap";
 import Footer from "../Footer/Footer";
 import { images } from "../../Constants";
+import Data from "../../Constants/data";
 
 const Prefabriquer = () => {
+  const bb = Data.map((product) => {
+    return (
+      <div className="col-md-4">
+        <div className="box">
+          <Link to={"/prefabriquer/${product.id}"}>
+            <img src={product.img} />{" "}
+          </Link>
+        </div>
+      </div>
+    );
+  });
+  const navigate = useNavigate();
   return (
     <>
       <Navs />
@@ -25,88 +39,11 @@ const Prefabriquer = () => {
         <div className="container">
           <hr className="ligne" />
           <h3>Élevez votre espace de vie avec nos magnifiques meubles</h3>
-          <div className="row">
-            <div className="col">
-              <Card  className="card">
-                <Card.Img variant="top" src={images.pre2} className="image" />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top"  src={images.pre4} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top"  src={images.pre3} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col">
-              <Card  className="card">
-                <Card.Img variant="top"  src={images.pre4} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top"  src={images.pre2} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top"  src={images.pre3} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col">
-              <Card  className="card">
-                <Card.Img variant="top"src={images.pre3} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top" src={images.pre4} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
-              <Card className="card">
-                <Card.Img variant="top" src={images.pre2} />
-                <Card.Body>
-                  <Button variant="btn btn-outline-primary" className="btn">View</Button>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
+          <div className="row">{bb}</div>
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 };

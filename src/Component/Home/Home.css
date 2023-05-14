@@ -29,19 +29,25 @@
   margin-bottom: 20px;
   color: rgb(95, 177, 177);
 }
+.card.card-custom {
+  
+  transition: background-color 0.3s ease;
+}
+.card.card-custom:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
 
 .lien {
   margin: 10px;
-  text-decoration: none; /* pour enlever la soulignement */
-  color: inherit; /* pour hériter de la couleur du texte du parent */
+  text-decoration: none; 
+  color: inherit; 
   font-family: "Fira Sans", Arial, sans-serif;
   font-size: 27px;
   font-weight: bold;
   text-align: center;
 }
-.lien:hover {
-  color: rgb(85, 85, 85);
-}
+
 .img-f {
   width: 100%;
   min-height: 500px;
@@ -101,8 +107,6 @@
 
 .cc-team {
   position: relative;
-
-  
 }
 .cc-team::before {
   content: "";
@@ -131,8 +135,6 @@
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0px;
-  padding: 0 40px;
   width: 100%;
 }
 
@@ -239,3 +241,25 @@
 .desc p {
   font-size: 40px;
 }
+.map {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  height: 0;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 1000px) {
+  .cc-localisation .row {
+    flex-direction: column;
+  }
+}
+

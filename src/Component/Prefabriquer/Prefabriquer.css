@@ -1,10 +1,12 @@
 .bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./../../assets/bg3.png") center center fixed no-repeat;
-  height: 750px;
   background-size: cover;
   width: 100%;
+  height: 700px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg .bg-desc {
@@ -12,28 +14,50 @@
   font-weight: 400;
   color: #fff;
   white-space: nowrap;
-  margin-top: 280px;
-  text-align: center;
-  align-items: center;
+  margin-top: 100px;
 }
 
 .ligne {
-    width: 25%;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    border: 5px solid rgb(255, 0, 0);
+  width: 25%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border: 5px solid rgb(255, 0, 0);
 }
-.card{
-  position:absolute;
+.bodyy {
+  margin-top: 30px;
+  padding: 25px 0px;
   width: 100%;
   height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  
+  overflow: hidden;
 }
-.btn{
+.bodyy .box {
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 10px;
   width: 100%;
-  text-align: center;
-  align-items: center;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.bodyy img {
+  max-width: 100%;
+}
 
+@media (max-width: 1000px) {
+  .bg .bg-desc {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .bg .bg-desc {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg .bg-desc {
+    font-size: 40px;
+    margin-top: 160px;
+  }
 }

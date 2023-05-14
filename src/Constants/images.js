@@ -20,6 +20,7 @@ import eqp3 from "../assets/eqp3.jpg";
 import eqp4 from "../assets/eqp4.jpg";
 import bg8 from "../assets/bg8.png";
 import bg9 from "../assets/bg9.png";
+import bg5 from "../assets/bg5.jpg";
 import bg3 from "../assets/bg3.png";
 import pre1 from "../assets/pre1.jpg";
 import pre2 from "../assets/pre2.jpg";
@@ -28,8 +29,9 @@ import pre4 from "../assets/pre4.jpg";
 import pre5 from "../assets/pre5.jpg";
 import pre6 from "../assets/pre6.jpg";
 import pre7 from "../assets/pre7.jpg";
-
-
+import bg6 from "../assets/bg6.jpg";
+import tt from "../assets/tt.jpg";
+import bgc from "../assets/bgc.jpg";
 export default {
   tapp,
   aa,
@@ -37,10 +39,13 @@ export default {
   dd,
   bg1,
   bg3,
+  tt,
   bgremo,
   atelier1,
   atelier2,
   bg2,
+  bgc,
+  bg5,
   rest2,
   prefb1,
   fab3,
@@ -53,6 +58,7 @@ export default {
   eqp3,
   eqp4,
   bg8,
+  bg6,
   bg9,
   pre1,
   pre2,

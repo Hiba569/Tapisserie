@@ -1,57 +1,90 @@
-
-
-.banner ,
-.order-form{
-    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ,url('./../../assets/bg3.jpg') center center 
-    fixed no-repeat;
-    height: 1200px;
-    background-size: cover;
-    width: 100% !important;
-    display: flex;
-  
+.banner,
+.order-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/bg3.jpg") center center fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.order-form{
-    height: 500px;
-}
-
-.banner .banner-desc{
-    display: flex;
-    font-size: 80px;
-    font-weight: 400;
-    color: #fff;
-    white-space:nowrap ;
-    margin-top: 240px;
-    
-}
-.banner .banner-p{
-
-    font-size: 50px;
-    white-space:nowrap ;
-    font-weight: 100;
-    color: #ffffff;
+.banner .banner-desc {
+  font-size: 100px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  margin-top: 100px;
+  text-align: center;
 
 }
-.banner .merriweather{
-    margin: 0 auto;
-    display: block;
-    font-size: 35px;
-}
-.banner .merriweather a{
-   color:rgb(111, 203, 242);
-   text-decoration: none;
 
+.banner .banner-p {
+  font-size: 35px;
+  white-space: nowrap;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
 }
-.banner .merriweather a:hover{
-   color:rgb(255, 255, 255);
-  
-   
 
+.banner .merriweather {
+  font-size: 35px;
+
+  margin-top: 30px;
+  text-align: center;
+  margin: 0 200px;
 }
+
+.banner .merriweather a {
+  color: rgb(111, 203, 242);
+  text-decoration: none;
+}
+
+.banner .merriweather a:hover {
+  color: rgb(255, 255, 255);
+}
+
 @media (max-width: 768px) {
-    
-   .banner{
-    padding-right: 1200px;
-   }
+  .banner .banner-desc {
+    font-size: 60px;
   }
-  
+
+  .banner .banner-p {
+    font-size: 30px;
+  }
+
+  .banner .merriweather {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner .banner-desc {
+    font-size: 40px;
+    margin-top: 160px;
+  }
+
+  .banner .banner-p {
+    font-size: 25px;
+  }
+
+  .banner .merriweather {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 460) {
+  .banner .banner-desc {
+    font-size: 100px;
+    margin-top: 160px;
+  }
+
+  .banner .banner-p {
+    font-size: 25px;
+  }
+
+  .banner .merriweather {
+    margin-top: 10px;
+  }
+}

@@ -2,49 +2,45 @@ import React, { Fragment } from "react";
 import Header from "../Header/Header";
 import { images } from "../../Constants";
 import "./Home.css";
-import NosTravaux from "../NosTravaux/NosTravaux";
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
 import Footer from "../Footer/Footer";
 import Navs from "../Navs/Navs";
 import { Link } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
 
 const Home = () => {
   return (
     <>
       <Navs />
       <Header />
-
-      {/* Notre Service */}
-      <section className="cc-menu py-5 merriweather  " id="nos_service">
+      {/* Nos service */}
+      <section className="cc-menu py-5 merriweather" id="nos_service">
         <hr className="hr" />
         <div className="container">
-          <h1 className="title">Nos Service</h1>
+          <h1 className="title">Nos Services</h1>
           <p className="p">____ce que nous pouvons faire ?____</p>
 
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
               <div className="card card-custom">
-                <img src={images.prefb1} className="card-img-top" alt="img" />
                 <Link className="lien" to="prefabriquer">
-                  {" "}
+                <img src={images.prefb1} className="card-img-top" alt="img" />
                   Vente meubles Préfabriqués
                 </Link>
               </div>
             </div>
             <div className="col">
               <div className="card card-custom">
-                <img src={images.fab3} className="card-img-top" alt="..." />
                 <Link className="lien" to="restaurer">
-                  {" "}
+                <img src={images.fab3} className="card-img-top" alt="..." />
                   Restauration de meubles
                 </Link>
               </div>
             </div>
             <div className="col">
               <div className="card card-custom">
-                <img src={images.rest2} className="card-img-top" alt="..." />
                 <Link className="lien" to="fabriquer">
-                  {" "}
+                <img src={images.rest2} className="card-img-top" alt="..." />
                   Fabrication de meubles
                 </Link>
               </div>
@@ -127,7 +123,35 @@ const Home = () => {
             <p className="p">____Dernières ameublement____</p>
           </div>
         </div>
-        <NosTravaux />
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={images.car1}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>Relaxation et confort dans nos salons spacieux</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={images.car2}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={images.car3}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={images.car4} alt="four slide" />
+          </Carousel.Item>
+        </Carousel>
       </section>
 
       <hr className="hr" />
@@ -271,11 +295,10 @@ const Home = () => {
         <h1 className="title">Notre Localisation</h1>
         <p className="p">____Venez nous rendre visite____</p>
         <div className="row">
-          <div className="col ">
+          <div className="col">
             <div className="desc">
               <h1>Rue Mohammed el Beqal</h1>
               <p>
-                {" "}
                 Marrakech 40001
                 <br />
                 0808601751
@@ -288,8 +311,8 @@ const Home = () => {
                 title="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.03328663139!2d-8.01702568484659!3d31.632938981332533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee918f7ccced%3A0xab7eed84bc3a4494!2sTapisserie%20De%20R%C3%AAve%20(Azami%20Omar)!5e0!3m2!1sfr!2sma!4v1683030730933!5m2!1sfr!2sma"
                 alt="..."
-                width="900"
-                height="800"
+                width="100%"
+                height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
@@ -299,6 +322,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section>
         <Footer />
       </section>
