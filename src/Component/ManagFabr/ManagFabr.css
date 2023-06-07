@@ -1,0 +1,65 @@
+.fabriquer {
+  display: inline;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 70px;
+
+}
+#card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/fabrication.jpg") center;
+  width: 87%;
+  height: 370px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+#card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/restaurer.jpg")  ;
+  width: 87%;
+  height: 370px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+/* fabriquer */
+.send{
+  cursor: pointer;
+  font-size: 32px;
+  padding-right: 10px;
+  color: rgb(170, 231, 208);
+}
+#send2{
+  color: rgb(32, 160, 117);
+}
+.thead1 {
+  background-color: rgb(192, 140, 140);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.red{
+  color: rgb(189, 112, 112);
+}
+#delet{
+  color: rgb(182, 76, 120);
+  font-size: 40px;
+  cursor: pointer;
+  padding-top: 65px;
+ 
+}

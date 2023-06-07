@@ -24,7 +24,7 @@ const Home = () => {
             <div className="col">
               <div className="card card-custom">
                 <Link className="lien" to="prefabriquer">
-                <img src={images.prefb1} className="card-img-top" alt="img" />
+                  <img src={images.prefb1} className="card-img-top" alt="img" />
                   Vente meubles Préfabriqués
                 </Link>
               </div>
@@ -32,7 +32,7 @@ const Home = () => {
             <div className="col">
               <div className="card card-custom">
                 <Link className="lien" to="restaurer">
-                <img src={images.fab3} className="card-img-top" alt="..." />
+                  <img src={images.fab3} className="card-img-top" alt="..." />
                   Restauration de meubles
                 </Link>
               </div>
@@ -40,7 +40,7 @@ const Home = () => {
             <div className="col">
               <div className="card card-custom">
                 <Link className="lien" to="fabriquer">
-                <img src={images.rest2} className="card-img-top" alt="..." />
+                  <img src={images.rest2} className="card-img-top" alt="..." />
                   Fabrication de meubles
                 </Link>
               </div>
@@ -60,7 +60,7 @@ const Home = () => {
           <div className="row">
             <div className="card mb-3 ">
               <div className="row ">
-                <div className="col-md-6">
+                <div className="col-md-6 ">
                   <img src={images.atelier1} className="img-f" alt="..." />
                 </div>
                 <div className="col-md-6">
@@ -74,10 +74,10 @@ const Home = () => {
                       apportent une touche de confort et d'élégance à votre
                       intérieur
                     </p>
-                    <p className="card-text">
-                      <a href="#" className="text-muted btn">
+                    <p className="text-muted">
+                    
                         Last updated 3 mins ago
-                      </a>
+                     
                     </p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const Home = () => {
                       vos meubles existants en leur donnant une nouvelle
                       apparence et une nouvelle vie.
                     </p>
-                    <p className="card-text">
+                    <p className="text">
                       <a href="#" className="text-muted btn">
                         Last updated 3 mins ago
                       </a>
@@ -126,7 +126,7 @@ const Home = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100  my-custom-class"
               src={images.car1}
               alt="First slide"
             />
@@ -136,20 +136,24 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 my-custom-class"
               src={images.car2}
               alt="Second slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 my-custom-class"
               src={images.car3}
               alt="Third slide"
             />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={images.car4} alt="four slide" />
+            <img
+              className="d-block w-100  my-custom-class"
+              src={images.car4}
+              alt="four slide"
+            />
           </Carousel.Item>
         </Carousel>
       </section>

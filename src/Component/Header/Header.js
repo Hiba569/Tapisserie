@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <section className="banner">
+    <section className="banner banner-lg">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -15,7 +15,7 @@ const Header = () => {
             <p>
               <span className="redressed banner-p">
                 Nos objets artisanaux en bois sont fabriqués
-                <br /> avec les meilleurs matériaux
+                <br/> avec les meilleurs matériaux
               </span>
               <br />
             </p>

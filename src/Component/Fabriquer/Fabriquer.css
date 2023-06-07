@@ -1,16 +1,16 @@
 .lg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./../../assets/bg5.jpg") center center fixed no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lg .lg-desc {
-  font-size:80px;
+  font-size: 80px;
   font-weight: 400;
   color: #fff;
   white-space: nowrap;
@@ -47,6 +47,7 @@
   height: 50px;
   padding: 7px;
   outline: none;
+  font-size: 20px;
 }
 .contexte textarea {
   margin-top: 20px;
@@ -54,6 +55,7 @@
   height: 70px;
   padding: 7px;
   outline: none;
+  font-size: 20px;
 }
 .contexte span {
   max-width: 100%;
@@ -63,8 +65,8 @@
   padding: 7px;
   border-radius: 0px;
 }
-.la{
-
+.la {
+  font-size: 30x;
   margin-top: 30px;
   width: 100%;
   max-width: 100%;

@@ -1,29 +1,35 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navs from "../Navs/Navs";
 import "./Prefabriquer.css";
-import { Card, Button } from "react-bootstrap";
 import Footer from "../Footer/Footer";
-import { images } from "../../Constants";
-import Data from "../../Constants/data";
+import { collection, getDocs, getDoc } from "firebase/firestore";
+import { db } from "../../firebase";
 
 const Prefabriquer = () => {
-  const bb = Data.map((product) => {
-    return (
-      <div className="col-md-4">
-        <div className="box">
-          <Link to={"/prefabriquer/${product.id}"}>
-            <img src={product.img} />{" "}
-          </Link>
-        </div>
-      </div>
-    );
-  });
-  const navigate = useNavigate();
+  const [imageUrls, setImageUrls] = useState([]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchImageUrls = async () => {
+      const querySnapshot = await getDocs(collection(db, "ArticleInfo"));
+      const items = [];
+
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        items.push(data.imageURL);
+      });
+
+      setImageUrls(items);
+    };
+
+    fetchImageUrls();
+  }, []);
+
   return (
     <>
       <Navs />
-      <div className=" bg w-100 ">
+      <div className="bg w-100">
         <div className="container">
           <div className="row">
             <div className="col"></div>
@@ -39,7 +45,26 @@ const Prefabriquer = () => {
         <div className="container">
           <hr className="ligne" />
           <h3>Élevez votre espace de vie avec nos magnifiques meubles</h3>
-          <div className="row">{bb}</div>
+          <div className="row">
+            {imageUrls.map((url, index) => (
+              <article className="col-md-4" key={index}>
+                <div className="box">
+                  <Link to={`/prefabriquer/${index}`}>
+                    <div className="image-container">
+                      <img
+                        src={url}
+                        alt={`Image ${index + 1}`}
+                        style={{ width: "700px", height: "500px" }}
+                      />
+                      <div className="overlay">
+                        <span>View</span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
 

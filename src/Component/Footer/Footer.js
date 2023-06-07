@@ -29,16 +29,16 @@ const Footer = () => {
           <Link to="/">Accueil</Link>
         </li>
         <li>
-          <Link to="prefabriquer">Prefabrique</Link>
+          <Link to="/prefabriquer">Prefabrique</Link>
         </li>
         <li>
-          <Link to="restaurer">Restauration</Link>
+          <Link to="/restaurer">Restauration</Link>
         </li>
         <li>
-          <Link to="fabriquer">Fabrication</Link>
+          <Link to="/fabriquer">Fabrication</Link>
         </li>
         <li>
-          <Link to="contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <p>© Copyright 2023 | All Rights Reserved</p>

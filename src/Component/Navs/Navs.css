@@ -7,7 +7,7 @@
   font-family: "Merriweather", serif;
 }
 
-nav {
+.cc-navbar {
   background-color: rgba(0, 0, 0, 0.55);
   font-family: "Merriweather", serif;
   box-shadow: 1px 1px 3px rgba(144, 199, 206, 0.54);
@@ -16,14 +16,14 @@ nav {
   max-width: 100%;
   border-radius: 0px;
 }
-nav a {
+.cc-navbar a {
   font-weight: bold;
   letter-spacing: 2px;
 
   margin: 0 20px;
 }
 
-nav img {
+.cc-navbar img {
   margin-left: 20px;
   width: 250px;
   height: auto;
@@ -52,7 +52,7 @@ nav img {
 
 
 @media (max-width: 990px) {
-  nav img {
+  .cc-navbar img {
     padding: 0 20px;
     margin-left: 10px;
     width: 150px;
@@ -67,7 +67,7 @@ nav img {
   
 }
 @media (max-width: 1200px) {
-  nav img {
+  .cc-navbar img {
     padding: 0 20px;
     margin-left: 10px;
     width: 150px;

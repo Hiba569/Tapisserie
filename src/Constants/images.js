@@ -32,10 +32,18 @@ import pre7 from "../assets/pre7.jpg";
 import bg6 from "../assets/bg6.jpg";
 import tt from "../assets/tt.jpg";
 import bgc from "../assets/bgc.jpg";
+import avatar from "../assets/avatar.jpg";
+import fabriquer from "../assets/fabrication.jpg";
+import Restaurer from "../assets/restaurer.jpg";
+import yy from "../assets/yy.jpg";
+
 export default {
   tapp,
+  fabriquer,
+  Restaurer,
   aa,
   bb,
+  avatar,
   dd,
   bg1,
   bg3,
@@ -67,6 +75,6 @@ export default {
   pre5,
   pre6,
   pre7,
- 
 
+  yy,
 };
