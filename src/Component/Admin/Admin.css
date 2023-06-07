@@ -18,7 +18,7 @@
 .contain {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.3fr ;
+  grid-template-columns: 310px;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas: "sidebar nav" "sidebar  main";
 }
@@ -38,4 +38,27 @@
 color: rgb(0, 0, 0);
 font-size: 55px;
 align-items: center;
+}
+.dashboard-title{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+ font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#card3 {
+  display: flex;
+  width: 500px;
+  height: 230px;
+  background: rgba(154, 187, 177, 0.432);
+  margin: 40px;
+  box-shadow: 0 15px 35px rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+}
+.dash-titre{
+font-size: 35px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }

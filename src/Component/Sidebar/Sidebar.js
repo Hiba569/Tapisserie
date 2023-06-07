@@ -31,6 +31,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className="sidebar__title">
           <div className="sidebar__ig">
             <img width={80} src={images.avatar} />
+           
           </div>
         </div>
         <div className="sidebar__menu">

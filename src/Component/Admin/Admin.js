@@ -17,10 +17,39 @@ const Admin = () => {
 
   return (
     <div className="contain">
-      <NavAdmin sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
-      <h1 className="dashboard-title">Dashboard</h1>
+      <NavAdmin />
+      <div className="fabriquer">
+        <h1 className="dashboard-title">Bonjour Hiba 👋</h1>
 
-      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+        <div className="row">
+          <div className="col-lg-6 col-md-6">
+            <div id="card3">
+              <h5 className="dash-titre">Les commandes</h5>
+              <p></p>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+            <div id="card3">
+              <h5 className="dash-titre">Contacts</h5>
+              <i></i>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-6 col-md-6">
+            <div id="card3">
+              <h5 className="dash-titre">Meubles Fabriques</h5>
+              <p></p>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+            <div id="card3">
+              <h5 className="dash-titre">Meubles Restaures</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Sidebar />
     </div>
   );
 };
